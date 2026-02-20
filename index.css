@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+/* ========== Global Reset ========== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* line-spacing: 1.5; */
+}
+
+/* ========== Base Layout ========== */
+html {
+    background-color: #ffffff;
+}
+/* body in a box */
+body {
+    margin: 30px auto;
+    font-family: "Noto Sans", sans-serif;
+    background-color: #F4F0E4; /* inside border */
+    border: 2px solid black;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+}
+/* Main page container */
+.page {
+    max-width: 1500px;                     /* prevents ultra-wide stretching */
+    margin: clamp(15px, 4vw, 40px) auto;   /* responsive outer spacing */
+    padding: clamp(15px, 3vw, 30px);
+    background-color: #F4F0E4;
+    border: 2px solid black;
+    /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); */
+}
+/* bottom Spacing between each heading */
+h1, nav, section{
+    margin-bottom: 1rem;
+}
+/* Indent for paragraphs */
+p{
+     text-indent: 4rem;
+}
+/* Giving margin spaces */
+h3,h4{
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+/* bottom Spacing between each heading */
+h1, nav, section{
+    margin-bottom: 1rem;
+}
+/* ========== Typography Main Heading========== */
+.header {
+    text-align: center;
+    font-weight: 900;
+    
+    
+}
+
+/* ========== Navigation for contact information========== */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;                          /* wraps cleanly */
+    justify-content: center;                  /* centered layout */
+    gap: clamp(4px, 1vw, 10px);               /* fluid spacing */
+    list-style: none;
+}
+
+/* Nav Items for contact information*/
+nav li {
+    padding: 0.5px 1px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    /* color: black; */
+}
+/* Optional hover effect for contact information*/
+nav li :hover {
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 6px;
+}
+/* decoration for links */
+nav li a:active{
+    color: green;
+    text-decoration: none;
+} 
+nav li a:visited{
+    color: red;
+    text-decoration: none;
+} 
+
+
+
+section{
+    /* margin-left: 5px; */
+    margin-top: 5px;
+   
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; */
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+    /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
+    /* gap: clamp(10px, 1vw, 10px); */
+}
+section :hover {
+    background-color: rgba(0,0,0,0.05);
+    /* border-radius: 6px; */
+}
+/* unordered list item to give space by margin */
+.leave_space{
+    padding-left: 40px;
+}
+/* styling for h4 */
+h4 {
+    padding: 0.5px 1px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
