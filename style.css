@@ -78,7 +78,7 @@ nav li {
 }
 a {
     text-decoration: none;
-    /* color: black; */
+    color: black;
 }
 /* Optional hover effect for contact information*/
 nav li :hover {
@@ -132,3 +132,4 @@ footer{
     color: #555;
 
 }
+
