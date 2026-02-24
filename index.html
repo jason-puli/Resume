@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./image/108076571.png" type="image/x-icon">
     <meta name="description" content="Jason Praveen Kumar's resume showcasing his skills, experience, and projects in the field of software development.">
+    
     <style>
 @media print {
     /* Remove link color + underline
@@ -36,7 +37,11 @@
 }
 </style>
 </head>
+
 <body class="page">
+    <button class="theme-toggle" id="themeToggle">
+  <div class="icon"></div>
+</button>
     <h1 class="header">P Jason Praveen Kumar</h1> 
     <nav>
         <ul><li><span><strong>SOFTWARE DEVELOPER</strong> |</span></li>
@@ -106,11 +111,11 @@ business-focused solutions.</p>
     <hr>
     <section>
         <h2>Experience</h2>
-        <h3>SUBJECT MATTER EXPERT: Jun|2018 – Dec|2020</h3>
+        <h3>SUBJECT MATTER EXPERT: 2018–2020</h3>
         <h4>Conneqt Business Solutions Pvt Ltd.</h4>
-        <h3>Process Executive: Jan|2014 – May|2018</h3>
+        <h3>Process Executive: 2014–2018</h3>
         <h4>Sun Icon Systems Pvt Ltd</h4>
-        <h3>Staffing Specialist: Jan|2010 – Dec|2013</h3>
+        <h3>Staffing Specialist: 2010–2013</h3>
         <h4>Frontline Technologies Business Solutions.</h4>
         <h3>Responsibilities</h3>
         <ul class="leave_space">
@@ -144,12 +149,17 @@ reporting accuracy, and system requirements.</li>
     </section>
     <!-- <hr> -->
      <footer>--P Jason Praveen Kumar--</footer>
+     <script>
+  const toggle = document.getElementById("themeToggle");
+  const body = document.body;
+
+  body.classList.add("day"); // default theme
+
+  toggle.addEventListener("click", () => {
+    body.classList.toggle("night");
+    body.classList.toggle("day");
+  });
+</script>
       
 </body>
-
 </html>
-
-
-
-
-
