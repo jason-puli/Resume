@@ -86,6 +86,10 @@ nav li :hover {
     border-radius: 6px;
 }
 /* decoration for links */
+nav li a:link{
+    color: rgb(128, 115, 220, 15);
+    text-decoration: none;
+} 
 nav li a:active{
     color: green;
     text-decoration: none;
@@ -106,13 +110,13 @@ section{
     /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
     /* gap: clamp(10px, 1vw, 10px); */
 }
-section :hover {
+/* section :hover {
     background-color: rgba(0,0,0,0.05);
-    /* border-radius: 6px; */
-}
+     border-radius: 6px; 
+} */
 /* unordered list item to give space by margin */
 .leave_space{
-    padding-left: 40px;
+    padding-left: 60px;
 }
 /* styling for h4 */
 h4 {
@@ -196,3 +200,4 @@ body.day::before {
   background: radial-gradient(circle at top right, rgba(255,200,0,0.4), transparent 60%);
   pointer-events: none;
 }
+
