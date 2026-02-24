@@ -78,7 +78,7 @@ nav li {
 }
 a {
     text-decoration: none;
-    color: black;
+    /* color: black; */
 }
 /* Optional hover effect for contact information*/
 nav li :hover {
@@ -86,10 +86,6 @@ nav li :hover {
     border-radius: 6px;
 }
 /* decoration for links */
-nav li a:link{
-    color: black;
-    text-decoration: none;
-}
 nav li a:active{
     color: green;
     text-decoration: none;
@@ -130,6 +126,73 @@ footer{
     padding: 10px;
     font-size: 0.9rem;
     color: #555;
-
+}
+/* ========== Theme Toggle Button ========== */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 65px;
+  height: 32px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background: #1e293b;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  transition: background 0.5s ease;
+  z-index: 2000;
 }
 
+/* Moving Circle */
+.theme-toggle .icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #facc15;
+  transition: transform 0.5s ease, background 0.5s ease;
+}
+
+/* Daytheme */
+body.day {
+  background: linear-gradient(to bottom, #fef9c3, #fde68a);
+  transition: background 1s ease;
+}
+
+/* night theme */
+body.night {
+  background: linear-gradient(to bottom, #0f172a, #1e293b);
+  color: #f1f5f9;
+  transition: background 1s ease, color 0.5s ease;
+}
+
+/* Toggle active state */
+body.night .theme-toggle {
+  background: #cbd5e1;
+}
+
+body.night .theme-toggle .icon {
+  transform: translateX(33px);
+  background: #f8fafc;
+}
+
+/* Night stars effect */
+body.night::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* Morning Glow effect */
+body.day::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255,200,0,0.4), transparent 60%);
+  pointer-events: none;
+}
