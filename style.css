@@ -132,7 +132,7 @@ footer{
     color: #555;
 }
 /* ========== Theme Toggle Button ========== */
-/* .theme-toggle {
+.theme-toggle {
   position: fixed;
   top: 5px;
   right: 20px;
@@ -147,42 +147,42 @@ footer{
   padding: 4px;
   transition: background 0.5s ease;
   z-index: 2000;
-} */
+}
 
 /* Moving Circle */
-/* .theme-toggle .icon {
+.theme-toggle .icon {
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background: #facc15;
   transition: transform 0.5s ease, background 0.5s ease;
-} */
+}
 
 /* Daytheme */
-/* body.day {
+body.day {
   background: linear-gradient(to bottom, #fef9c3, #fde68a);
   transition: background 1s ease;
-} */
+}
 
 /* night theme */
-/* body.night {
+body.night {
   background: linear-gradient(to bottom, #0f172a, #1e293b);
   color: #f1f5f9;
   transition: background 1s ease, color 0.5s ease;
-} */
+}
 
 /* Toggle active state */
-/* body.night .theme-toggle {
+body.night .theme-toggle {
   background: #cbd5e1;
 }
 
 body.night .theme-toggle .icon {
   transform: translateX(33px);
   background: #f8fafc;
-} */
+}
 
 /* Night stars effect */
-/* body.night::before {
+body.night::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -190,14 +190,15 @@ body.night .theme-toggle .icon {
   background-size: 40px 40px;
   opacity: 0.15;
   pointer-events: none;
-} */
+}
 
 /* Morning Glow effect */
-/* body.day::before {
+body.day::before {
   content: "";
   position: fixed;
   inset: 0;
   background: radial-gradient(circle at top right, rgba(255,200,0,0.4), transparent 60%);
   pointer-events: none;
-} */
+}
+
 
